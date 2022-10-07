@@ -1,15 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
 </head>
 
 <body>
-    Hello World!
+    <main>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <!-- <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"> -->
+                        <img class="is-rounded" src="profile.jpeg">
+                    </figure>
+                    <h1 class="title">
+                        James Bloxham
+                    </h1>
+                    <h2 class="subtitle">
+                        MSci Computer Science, Software Engineer
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                                <article class="tile is-child notification">
+                                    <p class="title">About Me</p>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias minima
+                                        accusamus, nisi suscipit deserunt obcaecati eveniet velit iusto error quae
+                                        dolorum aliquid ipsum voluptatem, odit quisquam! Cum deleniti labore aut?
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title">Middle tile</p>
+                                    <p class="subtitle">With an image</p>
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/640x480.png">
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification">
+                                <p class="title">Contact Me</p>
+                                <p class="subtitle">Aligned with the right tile</p>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus esse
+                                    itaque,
+                                    nemo, eius nam quidem iure, nulla culpa consectetur dignissimos iste fugit atque?
+                                    Nobis
+                                    soluta totam itaque sint natus?
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification">
+                            <div class="content">
+                                <p class="title">Computer Science</p>
+                                <p class="subtitle">MSci, Loughborough University</p>
+                                <div class="content">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo,
+                                    saepe quod reprehenderit provident a excepturi. Corporis illum dignissimos
+                                    necessitatibus debitis fugit! Architecto aliquam nam minima vero quidem cupiditate
+                                    at.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
