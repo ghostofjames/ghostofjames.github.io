@@ -2,211 +2,272 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>James Bloxham</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script defer>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Functions to open and close a modal
-            function openModal($el) {
-                $el.classList.add('is-active');
-            }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James Bloxham</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Functions to open and close a modal
+      function openModal($el) {
+        $el.classList.add('is-active');
+      }
 
-            function closeModal($el) {
-                $el.classList.remove('is-active');
-            }
+      function closeModal($el) {
+        $el.classList.remove('is-active');
+      }
 
-            function closeAllModals() {
-                (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-                    closeModal($modal);
-                });
-            }
-
-            // Add a click event on buttons to open a specific modal
-            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-                const modal = $trigger.dataset.target;
-                const $target = document.getElementById(modal);
-
-                $trigger.addEventListener('click', () => {
-                    openModal($target);
-                });
-            });
-
-            // Add a click event on various child elements to close the parent modal
-            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-                const $target = $close.closest('.modal');
-
-                $close.addEventListener('click', () => {
-                    closeModal($target);
-                });
-            });
-
-            // Add a keyboard event to close all modals
-            document.addEventListener('keydown', (event) => {
-                const e = event || window.event;
-
-                if (e.keyCode === 27) { // Escape key
-                    closeAllModals();
-                }
-            });
+      function closeAllModals() {
+        (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+          closeModal($modal);
         });
-    </script>
+      }
+
+      // Add a click event on buttons to open a specific modal
+      (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+        const modal = $trigger.dataset.target;
+        const $target = document.getElementById(modal);
+
+        $trigger.addEventListener('click', () => {
+          openModal($target);
+        });
+      });
+
+      // Add a click event on various child elements to close the parent modal
+      (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+        const $target = $close.closest('.modal');
+
+        $close.addEventListener('click', () => {
+          closeModal($target);
+        });
+      });
+
+      // Add a keyboard event to close all modals
+      document.addEventListener('keydown', (event) => {
+        const e = event || window.event;
+
+        if (e.keyCode === 27) { // Escape key
+          closeAllModals();
+        }
+      });
+    });
+  </script> -->
 </head>
 
 <body>
-    <main>
-        <section class="hero is-primary is-small">
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container is-max-desktop">
-                        <div class="navbar-menu">
-                            <div class="navbar-end">
-                                <span class="navbar-item">
-                                    <div class="buttons">
-                                        <a class="button is-primary is-inverted" href="https://github.com/ghostofjames"
-                                            target="_blank" rel="noopener noreferrer">
-                                            <span class="icon">
-                                                <i class="fab fa-github"></i>
-                                            </span>
-                                            <span>Github</span>
-                                        </a>
-                                        <a class="is-hidden button is-info is-inverted js-modal-trigger"
-                                            data-target="modal-js-example">
-                                            <span class="icon">
-                                                <i class="fas fa-envelope"></i>
-                                            </span>
-                                            <span>Contact</span>
-                                        </a>
-                                    </div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+  <main>
+    <section class="hero is-primary is-small">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container is-max-desktop">
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <span class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary is-inverted" href="https://github.com/ghostofjames" target="_blank"
+                      rel="noopener noreferrer">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Github</span>
+                    </a>
+                    <!-- <a class="is-hidden button is-info is-inverted js-modal-trigger" data-target="modal-js-example">
+                      <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span>Contact</span>
+                    </a> -->
+                  </div>
+                </span>
+              </div>
             </div>
-            <div class="hero-body">
-                <div class="hero-body">
-                    <div class="container is-max-desktop has-text-centered">
-                        <figure class="image is-128x128 is-inline-block">
-                            <img class="is-rounded" src="profile.jpeg">
-                        </figure>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <div class="hero-body">
+          <div class="container is-max-desktop has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+              <img class="is-rounded" src="profile.jpeg">
+            </figure>
 
-                        <h1 class="title">James Bloxham</h1>
-                        <h2 class="subtitle">MSci Computer Science</h2>
+            <h1 class="title">James Bloxham</h1>
+            <h2 class="subtitle">MSci Computer Science</h2>
 
-                        <a class="mx-2" href="https://www.linkedin.com/in/james-bloxham-067830249/">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </span>
-                                <span>LinkedIn</span>
-                            </span>
-                        </a>
-                        <a class="mx-2" href="https://github.com/ghostofjames">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i class="fab fa-github"></i>
-                                </span>
-                                <span>GitHub</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container is-max-desktop">
-                <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-parent is-8">
-                        <div class="tile is-child notification">
-                            <p class="title">About Me</p>
-                            <p class="content">
-                                2022 MSci Computer Science graduate and aspiring software engineer.
-                                Strong programming and
-                                problem solving skills.
-                                Motivated to learn and utilise new technologies.
-                            </p>
-                        </div>
-
-                        <div class="tile is-child notification">
-                            <p class="title">Education</p>
-                            <p class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus esse itaque,
-                                nemo, eius nam quidem iure, nulla culpa consectetur dignissimos iste fugit atque? Nobis
-                                soluta totam itaque sint natus?
-                            </p>
-                        </div>
-
-                        <div class="tile is-child notification">
-                            <p class="title">Projects</p>
-                            <p class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus esse itaque,
-                                nemo, eius nam quidem iure, nulla culpa consectetur dignissimos iste fugit atque? Nobis
-                                soluta totam itaque sint natus?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                            <p class="title">Skills</p>
-                            <div class="content">
-                                <b>Programming</b>
-                                <ul class="my-2">
-                                    <li>Python</li>
-                                    <li>HTML, CSS, JavaScript</li>
-                                    <li>Java</li>
-                                    <li>C++</li>
-                                    <li>Go</li>
-                                </ul>
-                                <b>Operating Systems</b>
-                                <ul class="my-2">
-                                    <li>Windows</li>
-                                    <li>Linux</li>
-                                    <li>Android</li>
-                                </ul>
-                                <b>Other</b>
-                                <ul class="my-2">
-                                    <li>Git</li>
-                                    <li>Docker</li>
-                                    <li>LaTeX</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container is-max-desktop has-text-centered">
-            <p>
-                Created by James Bloxham.
-                Uses <a href="https://bulma.io/">Bulma</a>.
-                <a href="https://github.com/ghostofjames/ghostofjames.github.io">Source</a>.
-            </p>
+            <a class="mx-2" href="https://www.linkedin.com/in/james-bloxham-067830249/">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+                <span>LinkedIn</span>
+              </span>
+            </a>
+            <a class="mx-2" href="https://github.com/ghostofjames">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </span>
+            </a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-
-    <div id="modal-js-example" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Modal title</p>
-                <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-                <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-                <button class="button is-success">Save changes</button>
-                <button class="button">Cancel</button>
-            </footer>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-parent is-8">
+            <div class="tile is-child notification">
+              <p class="title">About Me</p>
+              <p class="content">
+                2022 MSci Computer Science graduate and aspiring software engineer.
+                Strong programming and
+                problem solving skills.
+                Motivated to learn and utilise new technologies.
+              </p>
+            </div>
+            <div class="tile is-child notification">
+              <p class="title">Education</p>
+              <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus esse itaque,
+                nemo, eius nam quidem iure, nulla culpa consectetur dignissimos iste fugit atque? Nobis
+                soluta totam itaque sint natus?
+              </p>
+            </div>
+            <div class="tile is-child notification">
+              <p class="title">Projects</p>
+              <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus esse itaque,
+                nemo, eius nam quidem iure, nulla culpa consectetur dignissimos iste fugit atque? Nobis
+                soluta totam itaque sint natus?
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <p class="title">Skills</p>
+              <div class="content">
+                <b>Languages</b>
+                <div class="tags are-medium">
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-python"></i>
+                    </span>
+                    <span>Python</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-java"></i>
+                    </span>
+                    <span>Java</span>
+                  </span>
+                  <span class="tag is-primary icon-text">C++</span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-golang"></i>
+                    </span>
+                    <span>Go</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-html5"></i>
+                    </span>
+                    <span>HTML</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-css3-alt"></i>
+                    </span>
+                    <span>CSS</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-js"></i>
+                    </span>
+                    <span>JavaScript</span>
+                  </span>
+                </div>
+                <b>Libraries</b>
+                <div class="tags are-medium">
+                  <span class="tag is-primary">Flask</span>
+                  <span class="tag is-primary">FastAPI</span>
+                  <span class="tag is-primary">Django</span>
+                  <span class="tag is-primary">TensorFlow</span>
+                  <span class="tag is-primary">NumPy</span>
+                </div>
+                <b>Operating Systems</b>
+                <div class="tags are-medium">
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-windows"></i>
+                    </span>
+                    <span>Windows</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-linux"></i>
+                    </span>
+                    <span>Linux</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-android"></i>
+                    </span>
+                    <span>Android</span>
+                  </span>
+                </div>
+                <b>Other</b>
+                <div class="tags are-medium">
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fab fa-git-alt"></i>
+                    </span>
+                    <span>Git</span>
+                  </span>
+                  <span class="tag is-primary icon-text">
+                    <span class="icon">
+                      <i class="fa-brands fa-docker"></i>
+                    </span>
+                    <span>Docker</span>
+                  </span>
+                  <span class="tag is-primary">LaTeX</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <p>
+        Created by James Bloxham.
+        Uses <a href="https://bulma.io/">Bulma</a>.
+        <a href="https://github.com/ghostofjames/ghostofjames.github.io">Source</a>.
+      </p>
     </div>
+  </footer>
+
+
+  <!-- <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Modal title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div> -->
 </body>
 
 </html>
