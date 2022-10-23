@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+$purple: #3C1E59;
+
+$primary: $purple;
+
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+@import "../node_modules/bulma/bulma.sass";
+
+/* Footer at bottom */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Remove bulma nav breakpoint. source: https://github.com/jgthms/bulma/issues/2259 */
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .navbar>.container {
+        align-items: stretch;
+        display: flex;
+        min-height: 3.25rem;
+        width: 100%;
+    }
+
+    .navbar-burger {
+        display: none;
+    }
+
+    .navbar-menu {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .navbar,
+    .navbar-end,
+    .navbar-menu,
+    .navbar-start {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .navbar-end {
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .navbar-item {
+        display: flex;
+        align-items: center;
+    }
+}

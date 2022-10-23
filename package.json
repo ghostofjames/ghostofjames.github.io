@@ -1,0 +1,22 @@
+{
+  "name": "ghostofjames.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/style.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostofjames/ghostofjames.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/ghostofjames/ghostofjames.github.io#readme",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.3"
+  }
+}

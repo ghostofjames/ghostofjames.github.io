@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>James Bloxham</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script defer>
         document.addEventListener('DOMContentLoaded', () => {
@@ -53,64 +53,11 @@
             });
         });
     </script>
-    <style>
-        /* Footer at bottom */
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        /* Remove bulma nav breakpoint. source: https://github.com/jgthms/bulma/issues/2259 */
-        @media screen and (min-width: 0px) and (max-width: 1024px) {
-            .navbar>.container {
-                align-items: stretch;
-                display: flex;
-                min-height: 3.25rem;
-                width: 100%;
-            }
-
-            .navbar-burger {
-                display: none;
-            }
-
-            .navbar-menu {
-                background-color: transparent;
-                box-shadow: none;
-                padding: 0;
-                justify-content: flex-end;
-                flex-grow: 1;
-                flex-shrink: 0;
-            }
-
-            .navbar,
-            .navbar-end,
-            .navbar-menu,
-            .navbar-start {
-                display: flex;
-                align-items: stretch;
-            }
-
-            .navbar-end {
-                justify-content: flex-end;
-                margin-left: auto;
-            }
-
-            .navbar-item {
-                display: flex;
-                align-items: center;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <main>
-        <section class="hero is-info is-small">
+        <section class="hero is-primary is-small">
             <div class="hero-head">
                 <nav class="navbar">
                     <div class="container is-max-desktop">
@@ -118,7 +65,7 @@
                             <div class="navbar-end">
                                 <span class="navbar-item">
                                     <div class="buttons">
-                                        <a class="button is-info is-inverted" href="https://github.com/ghostofjames"
+                                        <a class="button is-primary is-inverted" href="https://github.com/ghostofjames"
                                             target="_blank" rel="noopener noreferrer">
                                             <span class="icon">
                                                 <i class="fab fa-github"></i>
