@@ -18,8 +18,5 @@
   "devDependencies": {
     "bulma": "^0.9.4",
     "node-sass": "^7.0.3"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0"
   }
 }
